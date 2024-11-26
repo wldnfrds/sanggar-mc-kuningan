@@ -1,0 +1,109 @@
+.navbar .dropdown-toggle {
+    font-weight: 600;
+    color: #4e73df;
+    cursor: pointer;
+}
+
+.navbar .dropdown-menu {
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown-item {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #f8f9fc;
+}
+
+.navbar .dropdown-menu .dropdown-item i {
+    color: #4e73df;
+}
+
+/* Enhanced Notifications */
+.alert {
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+    box-shadow: 0 4px 10px rgba(23, 162, 184, 0.3);
+}
+
+.alert-dismissible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alert .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.alert .btn-close {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Slide-In/Slide-Out Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.alert {
+    animation: slideIn 0.5s ease-out;
+}
+
+.alert-dismissible .btn-close {
+    animation: slideOut 0.5s ease-in-out;
+}
+/* Atur gaya untuk kolom Deskripsi */
+.table td:nth-child(3) {
+    max-width: 200px; /* Batasi lebar kolom Deskripsi */
+    white-space: nowrap; /* Jangan biarkan teks wrap ke baris berikutnya */
+    overflow: hidden; /* Sembunyikan teks yang keluar dari batas */
+    text-overflow: ellipsis; /* Tambahkan elipsis (...) pada teks yang dipotong */
+}

@@ -1,0 +1,89 @@
+.subscribe {
+    padding: 60px 0;
+}
+.subscribe form input.user {
+    width: 44%;
+    padding: 11px;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid #33b3c0;
+    margin-right: 2px;
+    color: #000000 !important;
+    letter-spacing: 2px;
+}
+.subscribe form input[type="submit"] {
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px 40px;
+    color: #fff;
+    background: #33b3c0;
+    letter-spacing: 2px;
+    font-weight: 600;
+    outline: none;
+}
+.subscribe form input[type="submit"]:hover {
+    background: #1c99a6;
+}
+
+.page-section .subscribe .container .input-will {
+    background-color: #ffc800;
+    color: #282828;
+}
+
+.team-caption:hover {
+    margin-bottom: 250px;
+}
+
+/* Menambahkan efek hover pada link navbar */
+.navbar-nav .nav-item .nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffcb05; /* Ganti dengan warna kuning yang lebih terang */
+    text-decoration: underline;
+}
+
+/* Membuat tombol login lebih menarik */
+.navbar-nav .nav-item .btn-warning {
+    font-weight: bold;
+    border-radius: 50px;
+}
+.navbar-nav .nav-item .btn-info {
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+/* Menambahkan animasi untuk dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Mengurangi ukuran font pada navbar */
+.navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+}
+
+/* Mengatur padding navbar agar tidak terlalu besar */
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Menjaga jarak antar elemen navbar */
+}
+
+/* Efek hover pada tombol outline */
+.navbar-nav .nav-item .btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: white;
+}
+.navbar-nav .nav-item .btn-outline-warnin:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Mengatur jarak antar link navbar pada perangkat mobile */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        margin-right: 10px; /* Mengurangi margin pada perangkat kecil */
+    }
+}
